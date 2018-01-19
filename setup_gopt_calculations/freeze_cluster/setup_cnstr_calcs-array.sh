@@ -40,7 +40,7 @@ cat > $sbatchfile << EOF
 #SBATCH -n 48
 #SBATCH -N 2
 #SBATCH --constraint=hsw
-#SBATCH --array=1-$NUM
+#SBATCH --array=0-$NUM
 
 module load CP2K #cp2k-env/4.1
 declare -a fname
