@@ -61,7 +61,7 @@ sed -i "s/myprojectnamemy/\${input_file%.inp}/g" \$input_file
 sed -i "s/myxyzfilemy/\${xyz_file%.xyz}/g" \$input_file
 
 
-cp2k_bin=cp2k.popt 
+cp2k_bin=cp2k.psmp 
 work_dir=.   
 ## runs the actual calculation
 srun \$cp2k_bin -o \$output_file -i \$input_file  # option 1 
